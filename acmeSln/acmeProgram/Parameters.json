@@ -1,0 +1,10 @@
+{
+    "ConnectionStrings": {
+      "DbACMEConnection": "Persist Security Info=False;User ID=sa;Password=_carlos2009;Initial Catalog=ACMEDB;Server=localhost"
+    },
+    "batchProcess": {
+      "numRows": 300000,
+      "URLCsvLocation":"https://storage10082020.blob.core.windows.net/y9ne9ilzmfld/Stock.CSV   ",
+      "csvName":"Stock.csv"
+    }
+  }

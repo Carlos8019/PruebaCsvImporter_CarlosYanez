@@ -1,0 +1,263 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeTest/acmeTest.csproj": {}
+  },
+  "projects": {
+    "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeDB/acmeDB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeDB/acmeDB.csproj",
+        "projectName": "acmeDB",
+        "projectPath": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeDB/acmeDB.csproj",
+        "packagesPath": "/home/carlos/.nuget/packages/",
+        "outputPath": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeDB/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/carlos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.0-msbuild3-final, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeProgram/acmeProgram.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeProgram/acmeProgram.csproj",
+        "projectName": "acmeProgram",
+        "projectPath": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeProgram/acmeProgram.csproj",
+        "packagesPath": "/home/carlos/.nuget/packages/",
+        "outputPath": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeProgram/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/carlos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeDB/acmeDB.csproj": {
+                "projectPath": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeDB/acmeDB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "ChoETL.JSON.NETStandard": {
+              "target": "Package",
+              "version": "[1.2.1.6, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "WindowsAzure.Storage": {
+              "target": "Package",
+              "version": "[9.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeTest/acmeTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeTest/acmeTest.csproj",
+        "projectName": "acmeTest",
+        "projectPath": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeTest/acmeTest.csproj",
+        "packagesPath": "/home/carlos/.nuget/packages/",
+        "outputPath": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/carlos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeDB/acmeDB.csproj": {
+                "projectPath": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeDB/acmeDB.csproj"
+              },
+              "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeProgram/acmeProgram.csproj": {
+                "projectPath": "/home/carlos/Documents/coding/ACMEApp/acmeSln/acmeProgram/acmeProgram.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
