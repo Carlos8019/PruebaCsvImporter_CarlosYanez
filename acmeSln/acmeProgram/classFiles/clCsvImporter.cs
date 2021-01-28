@@ -45,16 +45,16 @@ namespace acmeProgram.classFiles
                     }
                     else
                     {
-                      Console.WriteLine("Lote en ejecucion: "+numLote+ " con "+numRows.ToString()+" filas.");                      
-                      string stringToSerialize = JsonConvert.SerializeObject(producto); 
-                      string respuesta=await objManage.insertDataACMEAsync(stringToSerialize);
-                      Console.WriteLine("   Resultado: "+ ((respuesta=="0")? "No extraido":"Correcto"));
                       //add data of this loop
                       try{//Control data of previous import
                             producto.Add(new Product {pointOfSale=fieldsStream[0],product = fieldsStream[1], date = fieldsStream[2],stock = fieldsStream[3] });                    
                       }catch(Exception){
                             Console.WriteLine("Data omitida de previa importacion:"+fieldsStream.ToString() +" la extraccion continua.");
-                      }                        
+                      }                      
+                      Console.WriteLine("Lote en ejecucion: "+numLote+ " con "+numRows.ToString()+" filas.");                      
+                      string stringToSerialize = JsonConvert.SerializeObject(producto); 
+                      string respuesta=await objManage.insertDataACMEAsync(stringToSerialize);
+                      Console.WriteLine("   Resultado: "+ ((respuesta=="0")? "No extraido":"Correcto"));
                       producto.Clear();
                       numLote++;
                         }
